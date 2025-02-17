@@ -1,4 +1,4 @@
-Foi criado um simulador de carrinho de compras com produtos criados na tabela de `products`. 
+Foi criado um simulador de carrinho de compras com produtos. 
 
 Instale os pacotes de dependências:
 
@@ -51,4 +51,10 @@ npm install
 npm run dev
 ```
 
+Acesse a URL `http://localhost`, crie um novo usuário.
 
+Após login, será redirecionado a tela para completar seu cadastro com os dados necessários.
+
+E poderá calcular o carrinho e finalizar o pagamento com o meio de pagamento que desejar (Boleto, Pix ou cartão de crédito).
+
+Podendo realizar a visualização dos pedidos no menu "Pedidos" persistido em banco de dados Mysql.

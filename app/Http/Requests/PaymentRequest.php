@@ -23,7 +23,7 @@ class PaymentRequest extends FormRequest
     {
         return [
             'billingType' => 'required',
-            'value' => 'required',
+            'value' => ['required', 'numeric', 'min:1'],
             'creditCardNumber' => ['required_if:billingType,credit_card','integer', 'nullable'],
             'holderName' => ['required_if:billingType,credit_card', 'nullable'],
             'expiryMonth' => ['required_if:billingType,credit_card', 'integer', 'between:1,12', 'nullable'],
